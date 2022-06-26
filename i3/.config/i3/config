@@ -141,8 +141,4 @@ client.background       #282a36
 ######################## Autostart
 exec_always $HOME/.screenlayout/default.sh
 exec_always $HOME/.screenlayout/vga-default.sh
-exec_always killall polybar
-exec_always polybar primary &
-exec_always polybar secondary &
-exec_always picom &
 exec_always feh --bg-fill $HOME/Pictures/Wallpapers/wallpaper.jpg
