@@ -79,6 +79,7 @@ return packer.startup(function(use)
 
     -- Documents
     use "iamcco/markdown-preview.nvim"
+    use "norcalli/nvim-colorizer.lua"
 
     if PACKER_BOOTSTRAP then
         require("packer").sync()

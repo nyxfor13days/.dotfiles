@@ -7,5 +7,6 @@ require "config.plugins.lualine"
 require "config.plugins.bufferline"
 require "config.plugins.cmp"
 require "config.plugins.gitsigns"
+require "config.plugins.colorizer"
 
 require "config.plugins.lsp"
