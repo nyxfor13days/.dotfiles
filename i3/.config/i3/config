@@ -6,7 +6,7 @@ set $left h
 set $right l
 
 ######################## Fonts
-font pango:Fira Code 8
+font pango:Fira Code 10
 
 ######################## Essentials
 exec --no-startup-id dex --autostart --environment i3
