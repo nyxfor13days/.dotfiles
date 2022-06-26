@@ -130,7 +130,7 @@ default_floating_border pixel 1
 
 ######################## Colors
 # class                 border  backgr. text    indicator child_border
-client.focused          #bd93f9 #bd93f9 #f8f8f2 #bd93f9   #bd93f9
+client.focused          #6e5494 #6e5494 #fafafa #6e5494   #6e5494 
 client.focused_inactive #6272a4 #6272a4 #f8f8f2 #6272a4   #6272a4
 client.unfocused        #282a36 #282a36 #f8f8f2 #282a36   #282a36
 client.urgent           #ff5555 #ff5555 #f8f8f2 #ff5555   #ff5555
