@@ -112,6 +112,7 @@ cmp.setup {
     { name = "luasnip" },
     { name = "buffer" },
     { name = "path" },
+    { name = "cmp_tabnine" }
   },
   confirm_opts = {
     behavior = cmp.ConfirmBehavior.Replace,

@@ -41,7 +41,7 @@ local function process_sections(sections)
                 comp = { comp }
                 section[id] = comp
             end
-            comp.separator = left and { right = '' } or { left = '' }
+            comp.separator = left and { right = '' } or { left = '' }
         end
     end
     return sections
@@ -72,7 +72,7 @@ require('lualine').setup({
     options = {
         -- theme = theme,
         component_separators = '',
-        section_separators = { left = '', right = '' },
+        section_separators = { left = '|', right = '|' },
     },
 
     sections = process_sections {
@@ -84,13 +84,13 @@ require('lualine').setup({
                 'diagnostics',
                 source = { 'nvim' },
                 sections = { 'error' },
-                -- diagnostics_color = { error = { bg = colors.red, fg = colors.white } },
+                diagnostics_color = { error = { bg = colors.red, fg = colors.white } },
             },
             {
                 'diagnostics',
                 source = { 'nvim' },
                 sections = { 'warn' },
-                -- diagnostics_color = { warn = { bg = colors.orange, fg = colors.white } },
+                diagnostics_color = { warn = { bg = colors.orange, fg = colors.white } },
             },
             {
                 'filename',
@@ -99,9 +99,9 @@ require('lualine').setup({
             },
             {
                 modified,
-                -- color = {
-                    -- bg = colors.red
-                -- }
+                color = {
+                    bg = colors.red
+                }
             },
             {
                 '%w',

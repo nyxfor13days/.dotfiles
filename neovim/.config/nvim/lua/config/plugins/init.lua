@@ -60,6 +60,11 @@ return packer.startup(function(use)
     use "rafamadriz/friendly-snippets"
     use "L3MON4D3/LuaSnip"
     use "hrsh7th/nvim-cmp"
+    use {
+        "tzachar/cmp-tabnine",
+        run="./install.sh",
+        requires = "hrsh7th/nvim-cmp"
+    }
     use "saadparwaiz1/cmp_luasnip"
     use "hrsh7th/cmp-buffer"
     use "hrsh7th/cmp-nvim-lsp"
@@ -69,17 +74,26 @@ return packer.startup(function(use)
     use "hrsh7th/cmp-nvim-lsp-signature-help"
     use "onsails/lspkind-nvim"
     use "hrsh7th/cmp-cmdline"
+    use "windwp/nvim-autopairs"
 
     -- LSP
     use "williamboman/nvim-lsp-installer"
     use "neovim/nvim-lspconfig"
 
-    -- git
+    -- Git
     use "lewis6991/gitsigns.nvim"
 
     -- Documents
     use "iamcco/markdown-preview.nvim"
     use "norcalli/nvim-colorizer.lua"
+
+    -- Treesitter
+    use {
+        "nvim-treesitter/nvim-treesitter",
+        run = ":TSUpdate",
+    }
+    use "numToStr/Comment.nvim"
+    use "JoosepAlviste/nvim-ts-context-commentstring"
 
     if PACKER_BOOTSTRAP then
         require("packer").sync()
